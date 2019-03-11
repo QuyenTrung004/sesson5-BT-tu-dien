@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tu Dien</title>
+</head>
+<body>
+<input type="text" id="sum"/>
+<button type="button" onclick="sub()">Dich</button>
+<p id="ketqua"/>
+<script>
+    function sub() {
+        let tienganh =["hello","goodmorning","goodnight"];
+        let tiengviet=["xin chao","chao buoi sang","chuc ngu ngon"];
+        let x = document.getElementById("sum").value;
+        let y =null;
+        for(let i = 0; i< tiengviet.length; i++) {
+            if (x === tienganh[i]) {
+                y = tiengviet[i];
+            }
+            document.getElementById("ketqua").innerHTML = y;
+
+        }
+    }
+</script>
+</body>
+</html>
